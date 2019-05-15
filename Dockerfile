@@ -1,7 +1,7 @@
 # Dockerfile
 
-FROM debian
+FROM debian:buster
 
-RUN apt install git hub
+RUN apt-get update && apt-get install -y git hub
 
 ENTRYPOINT ["bash"]
