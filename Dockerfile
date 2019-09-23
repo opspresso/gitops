@@ -1,7 +1,7 @@
 # Dockerfile
 
-FROM debian:buster
+FROM alpine
 
-RUN apt-get update && apt-get install -y curl git hub jq
+RUN apk add -v --update bash curl python py-pip jq hub
 
 ENTRYPOINT ["bash"]
