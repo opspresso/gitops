@@ -1,8 +1,6 @@
 # Dockerfile
 
-FROM alpine
-
-RUN echo "ipv6" >> /etc/modules
+FROM alpine:edge
 
 RUN apk add -v --update bash curl jq hub
 
