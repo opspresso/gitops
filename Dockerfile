@@ -2,6 +2,6 @@
 
 FROM alpine
 
-RUN apk add -v --update bash curl python py-pip jq hub
+RUN apk add -v --update bash curl jq hub
 
 ENTRYPOINT ["bash"]
