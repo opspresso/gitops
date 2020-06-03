@@ -1,16 +1,10 @@
-# git
+# gitops
 
-[![GitHub Actions status](https://github.com/opspresso/git/workflows/Build-Push/badge.svg)](https://github.com/opspresso/git/actions)
-[![GitHub Releases](https://img.shields.io/github/release/opspresso/git.svg)](https://github.com/opspresso/git/releases)
+[![GitHub Actions status](https://github.com/opspresso/gitops/workflows/Build-Push/badge.svg)](https://github.com/opspresso/gitops/actions)
+[![GitHub Releases](https://img.shields.io/github/release/opspresso/gitops.svg)](https://github.com/opspresso/gitops/releases)
 
-[![DockerHub Badge](http://dockeri.co/image/opspresso/git)](https://hub.docker.com/r/opspresso/git/)
+[![DockerHub Badge](http://dockeri.co/image/opspresso/gitops)](https://hub.docker.com/r/opspresso/gitops/)
 
 ```bash
-docker pull opspresso/git
-```
-
-## version
-
-```
-ENV VERSION v0.1.2
+docker pull opspresso/gitops
 ```
