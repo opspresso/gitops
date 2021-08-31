@@ -1,7 +1,11 @@
 # Dockerfile
 
-FROM opspresso/awscli
+FROM amazon/aws-cli
 
-# RUN apk add --no-cache -X http://dl-cdn.alpinelinux.org/alpine/edge/testing hub
+RUN aws --version %% \
+    yum install -y bash curl python3 jq git file hub && \
+    yum clean all
 
-ENTRYPOINT ["git"]
+ADD run.py /run.py
+
+ENTRYPOINT ["python3", "run.py"]
